@@ -76,7 +76,7 @@
   <!-- ========================================================================= -->
   <!-- NAVBAR & TOP BAR (UNIFIED) -->
   <!-- ========================================================================= -->
-  <header class="fixed top-0 left-0 w-full z-50 shadow-sm">
+  <header class="fixed top-0 left-0 w-full z-50 transition-shadow duration-300">
     <!-- Top Bar -->
     <div class="bg-primary-container text-on-primary py-2 px-4 sm:px-8 text-xs sm:text-sm font-medium border-b border-primary/40">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-4">
@@ -177,29 +177,29 @@
             <span class="material-symbols-outlined text-[18px] mr-1.5 text-secondary-container">chat</span>
             <span>Konsultasi Gratis</span>
           </a>
-          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg bg-surface-container text-primary-container hover:bg-surface-container-high transition-colors" type="button" aria-label="Toggle Navigation">
-            <span class="material-symbols-outlined text-[26px]">menu</span>
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg bg-surface-container text-primary-container hover:bg-surface-container-high transition-colors flex items-center justify-center" type="button" aria-label="Toggle Navigation" aria-expanded="false">
+            <span id="mobileMenuIcon" class="material-symbols-outlined text-[26px]">menu</span>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Mobile Drawer Navigation -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-surface-container-lowest border-b border-outline-variant/40 px-4 py-4 space-y-3">
-      <a class="block font-headline font-bold text-primary-container text-sm py-1.5" href="index.html">Beranda</a>
-      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm py-1.5" href="tentang-kami.html">Tentang Kami</a>
-      <div class="space-y-1 pl-3 border-l-2 border-secondary-container">
+    <div id="mobileMenu" class="hidden lg:hidden bg-surface-container-lowest border-b border-outline-variant/40 px-4 py-4 space-y-3 max-h-[85vh] overflow-y-auto shadow-2xl">
+      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm px-3 py-1.5" href="index.html">Beranda</a>
+      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm px-3 py-1.5" href="tentang-kami.html">Tentang Kami</a>
+      <div class="space-y-1 pl-3 border-l-2 border-secondary-container my-1">
         <span class="block font-headline font-semibold text-xs text-secondary uppercase tracking-wider py-1">Paket Outbound</span>
-        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1" href="paket.html">Semua Paket Outbound</a>
-        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1" href="paket-gathering.html">Wisata &amp; Gathering</a>
-        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1" href="paket-adventure.html">Adventure &amp; Rafting</a>
-        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1" href="detail-paket.html">Detail &amp; Simulasi Paket</a>
+        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1.5 px-2 rounded hover:bg-surface-container-low" href="paket.html">Semua Paket Outbound</a>
+        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1.5 px-2 rounded hover:bg-surface-container-low" href="paket-gathering.html">Wisata &amp; Gathering</a>
+        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1.5 px-2 rounded hover:bg-surface-container-low" href="paket-adventure.html">Adventure &amp; Rafting</a>
+        <a class="block text-sm text-on-surface-variant hover:text-primary-container py-1.5 px-2 rounded hover:bg-surface-container-low" href="detail-paket.html">Detail &amp; Simulasi Paket</a>
       </div>
-      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm py-1.5" href="destinasi.html">Destinasi Venue</a>
-      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm py-1.5" href="fasilitas.html">Fasilitas &amp; Prasarana</a>
-      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm py-1.5" href="galeri.html">Galeri Dokumentasi</a>
-      <a class="block font-headline font-bold text-primary-container text-sm py-1.5" href="blog.html">Blog &amp; Panduan</a>
-      <a class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-secondary-container text-on-secondary-container font-headline text-sm font-bold shadow-sm" href="https://wa.me/6281234567890" target="_blank">
+      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm px-3 py-1.5" href="destinasi.html">Destinasi Venue</a>
+      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm px-3 py-1.5" href="fasilitas.html">Fasilitas &amp; Prasarana</a>
+      <a class="block font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm px-3 py-1.5" href="galeri.html">Galeri Dokumentasi</a>
+      <a class="block font-headline font-bold text-primary-container bg-primary-container/10 px-3 py-2 rounded-lg text-sm" href="blog.html">Blog &amp; Panduan</a>
+      <a class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-secondary-container text-on-secondary-container font-headline text-sm font-bold shadow-sm mt-2" href="https://wa.me/6281234567890" target="_blank">
         <span class="material-symbols-outlined text-[18px]">chat</span>
         <span>Hubungi WhatsApp</span>
       </a>
@@ -383,10 +383,30 @@
   <script>
     function toggleMobileMenu() {
       const menu = document.getElementById('mobileMenu');
-      if (menu) menu.classList.toggle('hidden');
+      const icon = document.getElementById('mobileMenuIcon');
+      const btn = document.getElementById('mobileMenuBtn');
+      if (menu) {
+        const isHidden = menu.classList.contains('hidden');
+        menu.classList.toggle('hidden');
+        if (icon) {
+          icon.textContent = isHidden ? 'close' : 'menu';
+        }
+        if (btn) {
+          btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        }
+      }
     }
 
     window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (header) {
+        if (window.scrollY > 20) {
+          header.classList.add('shadow-md');
+        } else {
+          header.classList.remove('shadow-md');
+        }
+      }
+
       const btn = document.getElementById('backToTopBtn');
       if (btn) {
         if (window.scrollY > 300) {
