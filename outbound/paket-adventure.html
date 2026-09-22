@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Paket Adventure &amp; Rafting Tour - Outbound Jatim</title>
+  <meta name="description" content="Paket petualangan arung jeram rafting Batu & Pacet, paintball tactical battle, dan offroad 4x4 Jeep Bromo & Trawas."/>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2a0006",
+            "primary-container": "#4a0e17",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#ca7379",
+            "secondary": "#805600",
+            "secondary-container": "#fdc268",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#764e00",
+            "secondary-fixed": "#ffddb1",
+            "on-secondary-fixed": "#291800",
+            "tertiary": "#001217",
+            "tertiary-container": "#002931",
+            "on-tertiary": "#ffffff",
+            "background": "#fff8f7",
+            "surface": "#fff8f7",
+            "surface-dim": "#e3d7d8",
+            "surface-variant": "#ece0e0",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#fef1f2",
+            "surface-container": "#f8ebec",
+            "surface-container-high": "#f2e5e6",
+            "surface-container-highest": "#ece0e0",
+            "on-surface": "#201a1b",
+            "on-surface-variant": "#544343",
+            "outline": "#867273",
+            "outline-variant": "#d9c1c1"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            headline: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { margin: 0; padding: 0; min-height: 100vh; display: flex; flex-direction: column; }
+    main { flex: 1 0 auto; }
+    footer { flex-shrink: 0; }
+  </style>
+</head>
+<body class="bg-background font-sans text-on-surface antialiased">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-shadow duration-300">
+    <div class="bg-primary-container text-on-primary py-2 px-4 sm:px-8 text-xs sm:text-sm font-medium border-b border-primary/40">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-4">
+        <div class="flex items-center gap-2 overflow-x-auto text-on-primary/90 text-xs sm:text-sm">
+          <span class="material-symbols-outlined text-[16px] text-secondary-container">pin_drop</span>
+          <span class="font-headline font-bold text-secondary-container tracking-wider uppercase text-[11px]">Area Layanan:</span>
+          <span>Batu Malang • Trawas • Pacet • Bromo • Banyuwangi</span>
+        </div>
+        <div class="flex items-center gap-4 shrink-0">
+          <a class="flex items-center gap-1.5 text-secondary-container hover:text-white transition-colors" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[16px]">call</span>
+            <span class="font-headline font-semibold text-xs sm:text-sm">Hotline 24/7: +62 812-3456-7890</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-surface-container-lowest/95 backdrop-blur-md h-20 border-b border-outline-variant/30">
+      <div class="max-w-7xl mx-auto h-full px-4 sm:px-8 flex items-center justify-between gap-4">
+        <a class="flex items-center gap-3 shrink-0 group" href="../index.html">
+          <div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:scale-105 transition-transform">
+            <span class="material-symbols-outlined text-[24px]">hiking</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
+            <span class="text-[10px] font-headline font-semibold uppercase tracking-widest text-secondary mt-0.5">Provider Jatim</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6">
+          <a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="../index.html">Beranda</a>
+          <a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="../tentang-kami.html">Tentang Kami</a>
+          
+          <div class="relative group">
+            <button class="flex items-center gap-1 font-headline font-bold text-primary-container text-sm relative py-1 after:content-[''] after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-0.5 after:bg-primary-container after:rounded-full" type="button">
+              <span>Layanan &amp; Paket</span>
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+            </button>
+            <div class="absolute top-full left-0 w-80 pt-3 hidden group-hover:block transition-all z-50">
+              <div class="bg-surface-container-lowest rounded-xl shadow-xl p-2.5 flex flex-col gap-1 border border-outline-variant/40">
+                <a class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors" href="index.html">
+                  <span class="material-symbols-outlined text-primary-container mt-0.5 text-[20px]">groups</span>
+                  <div>
+                    <div class="font-headline font-bold text-xs text-on-surface">Paket Outbound Training</div>
+                    <div class="text-[11px] text-on-surface-variant">Team Building &amp; Leadership Camp</div>
+                  </div>
+                </a>
+                <a class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors" href="../wisata/index.html">
+                  <span class="material-symbols-outlined text-tertiary-container mt-0.5 text-[20px]">forest</span>
+                  <div>
+                    <div class="font-headline font-bold text-xs text-on-surface">Paket Wisata &amp; Gathering</div>
+                    <div class="text-[11px] text-on-surface-variant">Family Gathering &amp; Wisata Edukasi</div>
+                  </div>
+                </a>
+                <a class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors" href="../destinasi/index.html">
+                  <span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">pin_drop</span>
+                  <div>
+                    <div class="font-headline font-bold text-xs text-on-surface">Kategori Destinasi Venue</div>
+                    <div class="text-[11px] text-on-surface-variant">Batu, Trawas, Pacet, Bromo &amp; Banyuwangi</div>
+                  </div>
+                </a>
+                <a class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low transition-colors" href="paket-adventure.html">
+                  <span class="material-symbols-outlined text-amber-600 mt-0.5 text-[20px]">kayaking</span>
+                  <div>
+                    <div class="font-headline font-bold text-xs text-on-surface">Adventure &amp; Rafting</div>
+                    <div class="text-[11px] text-on-surface-variant">Rafting, Paintball Battle &amp; Offroad</div>
+                  </div>
+                </a>
+                <div class="border-t border-outline-variant/30 my-1"></div>
+                <a class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors" href="../detail-paket.html">
+                  <span class="material-symbols-outlined text-emerald-600 mt-0.5 text-[20px]">calculate</span>
+                  <div>
+                    <div class="font-headline font-bold text-xs text-on-surface">Detail &amp; Simulasi Biaya</div>
+                    <div class="text-[11px] text-on-surface-variant">Hitung Estimasi Budget Outbound</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="../destinasi/index.html">Destinasi</a>
+          <a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="../fasilitas.html">Fasilitas</a>
+          <a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="../galeri.html">Galeri</a>
+          <a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="../blog.html">Blog</a>
+        </nav>
+
+        <div class="flex items-center gap-3 shrink-0">
+          <a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-primary-container text-on-primary font-headline text-sm font-bold hover:bg-primary transition-all shadow-sm ring-1 ring-secondary-container/30" href="https://wa.me/6281234567890?text=Halo%20Outbound%20Jatim,%20saya%20ingin%20konsultasi%20paket%20adventure" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] mr-1.5 text-secondary-container">chat</span>
+            <span>Konsultasi Gratis</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-32 sm:pt-28">
+    <section class="bg-primary-container text-on-primary py-16 px-4 sm:px-8 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/10 text-secondary-container text-xs font-bold border border-surface-container-lowest/20">
+          <span class="material-symbols-outlined text-[16px]">kayaking</span>
+          <span>Kategori Adventure &amp; Rafting</span>
+        </div>
+        <h1 class="font-headline text-3xl sm:text-5xl font-extrabold text-on-primary tracking-tight">
+          Petualangan Rafting, Paintball &amp; Offroad 4x4
+        </h1>
+        <p class="text-surface-container-high text-base sm:text-lg max-w-3xl leading-relaxed">
+          Uji adrenalin tim Anda di sungai Batu Malang &amp; Pacet Mojokerto dengan perlengkapan keselamatan internasional dan skenario perang taktis paintball.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTENT GRID WITH WIREFRAME PLACEHOLDERS -->
+    <section class="py-16 px-4 sm:px-8 max-w-7xl mx-auto space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- ITEM 1: RAFTING -->
+        <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-6 space-y-5 shadow-md">
+          <div class="w-full h-52 bg-surface-container-high rounded-xl flex flex-col items-center justify-center text-center p-4">
+            <span class="material-symbols-outlined text-[36px] text-amber-700 mb-1">kayaking</span>
+            <span class="font-headline font-bold text-xs text-primary-container uppercase">[ Wireframe Foto Rafting River ]</span>
+            <span class="text-[11px] text-on-surface-variant">Ukuran Foto: 800 x 500 px</span>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-primary-container">White Water Rafting Sungai Brantas / Pacet</h3>
+          <p class="text-xs sm:text-sm text-on-surface-variant">Pengarungan sungai 10-12 KM dengan 15+ jeram menantang kelas III-IV. Termasuk helm, pelampung, pemandu &amp; rescue team.</p>
+          <div class="pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+            <span class="font-headline text-lg font-bold text-primary-container">Rp 225.000 / pax</span>
+            <a class="px-4 py-2 bg-primary-container text-on-primary text-xs font-bold rounded-full" href="https://wa.me/6281234567890?text=Pesan%20Rafting" target="_blank">Pesan WA</a>
+          </div>
+        </div>
+
+        <!-- ITEM 2: PAINTBALL -->
+        <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-6 space-y-5 shadow-md">
+          <div class="w-full h-52 bg-surface-container-high rounded-xl flex flex-col items-center justify-center text-center p-4">
+            <span class="material-symbols-outlined text-[36px] text-amber-700 mb-1">target</span>
+            <span class="font-headline font-bold text-xs text-primary-container uppercase">[ Wireframe Foto Paintball Battle ]</span>
+            <span class="text-[11px] text-on-surface-variant">Ukuran Foto: 800 x 500 px</span>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-primary-container">Tactical Paintball Wargame</h3>
+          <p class="text-xs sm:text-sm text-on-surface-variant">Simulasi tempur taktis dengan 50 peluru per orang, google masker pelindung, seragam loreng, dan instruktur lapangan.</p>
+          <div class="pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+            <span class="font-headline text-lg font-bold text-primary-container">Rp 150.000 / pax</span>
+            <a class="px-4 py-2 bg-primary-container text-on-primary text-xs font-bold rounded-full" href="https://wa.me/6281234567890?text=Pesan%20Paintball" target="_blank">Pesan WA</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-container-high border-t border-outline-variant/30 text-on-surface pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-outline-variant/30">
+        
+        <div class="lg:col-span-4 space-y-4">
+          <a class="flex items-center gap-3 group" href="../index.html">
+            <div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:scale-105 transition-transform">
+              <span class="material-symbols-outlined text-[24px]">hiking</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
+              <span class="text-[10px] font-headline font-semibold uppercase tracking-widest text-secondary mt-0.5">Provider Outbound &amp; Gathering</span>
+            </div>
+          </a>
+          <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+            Outbound Jatim adalah provider resmi layanan outbound training, team building, corporate gathering, dan wisata adventure professional di Jawa Timur. Kami melayani lokasi Batu Malang, Trawas, Pacet, Bromo, hingga Banyuwangi dengan instruktur tersertifikasi BNSP dan standar keamanan internasional.
+          </p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="font-headline text-sm font-bold uppercase tracking-wider text-primary-container border-b-2 border-secondary/40 pb-2 inline-block">Navigasi Cepat</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-on-surface-variant font-medium">
+            <li><a class="hover:text-primary-container transition-colors" href="../index.html">Beranda</a></li>
+            <li><a class="hover:text-primary-container transition-colors" href="../tentang-kami.html">Tentang Kami</a></li>
+            <li><a class="hover:text-primary-container transition-colors" href="index.html">Layanan &amp; Paket</a></li>
+            <li><a class="hover:text-primary-container transition-colors" href="../destinasi/index.html">Destinasi Venue</a></li>
+            <li><a class="hover:text-primary-container transition-colors" href="../fasilitas.html">Fasilitas</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="font-headline text-sm font-bold uppercase tracking-wider text-primary-container border-b-2 border-secondary/40 pb-2 inline-block">Kategori Paket</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-on-surface-variant font-medium">
+            <li><a class="hover:text-primary-container transition-colors" href="index.html">Outbound &amp; Team Building</a></li>
+            <li><a class="hover:text-primary-container transition-colors" href="../wisata/index.html">Wisata &amp; Family Gathering</a></li>
+            <li><a class="hover:text-primary-container transition-colors" href="../destinasi/index.html">Destinasi &amp; Venue Favorit</a></li>
+            <li><a class="hover:text-primary-container transition-colors" href="paket-adventure.html">Adventure &amp; Rafting Tour</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="font-headline text-sm font-bold uppercase tracking-wider text-primary-container border-b-2 border-secondary/40 pb-2 inline-block">Kontak</h4>
+          <ul class="space-y-3 text-xs sm:text-sm text-on-surface-variant">
+            <li><strong>Kantor Operasional:</strong> Jl. Oro-Oro Ombo No. 88, Batu Malang</li>
+            <li><strong>Hotline WA:</strong> +62 812-3456-7890 (24/7)</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-on-surface-variant gap-4">
+        <p>© 2026 Outbound Jatim. Seluruh Hak Cipta Dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
