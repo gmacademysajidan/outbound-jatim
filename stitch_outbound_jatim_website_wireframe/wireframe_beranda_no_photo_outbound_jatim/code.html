@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Outbound Jatim - Provider Outbound &amp; Gathering Profesional Jawa Timur</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2a0006",
+            "primary-container": "#4a0e17",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#ca7379",
+            "secondary": "#805600",
+            "secondary-container": "#fdc268",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#764e00",
+            "secondary-fixed": "#ffddb1",
+            "on-secondary-fixed": "#291800",
+            "tertiary": "#001217",
+            "tertiary-container": "#002931",
+            "on-tertiary": "#ffffff",
+            "background": "#fff8f7",
+            "surface": "#fff8f7",
+            "surface-dim": "#e3d7d8",
+            "surface-variant": "#ece0e0",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#fef1f2",
+            "surface-container": "#f8ebec",
+            "surface-container-high": "#f2e5e6",
+            "surface-container-highest": "#ece0e0",
+            "on-surface": "#201a1b",
+            "on-surface-variant": "#544343",
+            "outline": "#867273",
+            "outline-variant": "#d9c1c1"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            headline: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    footer {
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body class="bg-background font-sans text-on-surface antialiased">
+<!-- ========================================================================= -->
+<!-- NAVBAR & TOP BAR -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 left-0 w-full z-50 shadow-sm">
+<!-- Top Bar -->
+<div class="bg-primary-container text-on-primary py-2 px-4 sm:px-8 text-xs sm:text-sm font-medium border-b border-primary/40">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-4">
+<div class="flex items-center gap-2 overflow-x-auto text-on-primary/90 text-xs sm:text-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">pin_drop</span>
+<span class="font-headline font-bold text-secondary-container tracking-wider uppercase text-[11px]">Area Layanan:</span>
+<span>Batu Malang • Trawas • Pacet • Bromo • Banyuwangi</span>
+</div>
+<div class="flex items-center gap-4 shrink-0">
+<a class="flex items-center gap-1.5 text-secondary-container hover:text-white transition-colors" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-headline font-semibold text-xs sm:text-sm">Hotline 24/7: +62 812-3456-7890</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<div class="bg-surface-container-lowest/95 backdrop-blur-md h-20 border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto h-full px-4 sm:px-8 flex items-center justify-between gap-4">
+<!-- Logo -->
+<a class="flex items-center gap-3 shrink-0 group" href="#">
+<div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">hiking</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
+<span class="text-[10px] font-headline font-semibold uppercase tracking-widest text-secondary mt-0.5">Provider Jatim</span>
+</div>
+</a>
+<!-- Menu Links -->
+<nav class="hidden lg:flex items-center gap-7">
+<a class="font-headline font-bold text-primary-container text-sm relative py-1 after:content-[''] after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-0.5 after:bg-primary-container after:rounded-full" href="#">
+            Beranda
+          </a>
+<a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="#tentang-kami">
+            Tentang Kami
+          </a>
+<!-- Dropdown Layanan -->
+<div class="relative group">
+<button class="flex items-center gap-1 font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" type="button">
+<span>Layanan</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+</button>
+<div class="absolute top-full left-0 w-72 pt-3 hidden group-hover:block transition-all z-50">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl p-2 flex flex-col gap-1 border border-outline-variant/40">
+<a class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors" href="#paket-populer">
+<span class="material-symbols-outlined text-primary-container mt-0.5 text-[20px]">location_on</span>
+<div>
+<div class="font-headline font-bold text-xs text-on-surface">Destinasi</div>
+<div class="text-[11px] text-on-surface-variant">Batu Malang, Trawas, Pacet, Bromo</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors" href="#paket-populer">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">kayaking</span>
+<div>
+<div class="font-headline font-bold text-xs text-on-surface">Adventure</div>
+<div class="text-[11px] text-on-surface-variant">Rafting, Paintball, Offroad Jeep 4x4</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-surface-container-low transition-colors" href="#paket-populer">
+<span class="material-symbols-outlined text-tertiary-container mt-0.5 text-[20px]">forest</span>
+<div>
+<div class="font-headline font-bold text-xs text-on-surface">Wisata &amp; Gathering</div>
+<div class="text-[11px] text-on-surface-variant">Family Gathering &amp; Corporate Outing</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="#mengapa-kami">
+            Fasilitas
+          </a>
+<a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="#testimoni">
+            Galeri
+          </a>
+<a class="font-headline font-medium text-on-surface-variant hover:text-primary-container text-sm transition-colors py-1" href="#faq-container">
+            Blog
+          </a>
+</nav>
+<!-- CTA & WhatsApp button -->
+<div class="flex items-center gap-3 shrink-0">
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-primary-container text-on-primary font-headline text-sm font-bold hover:bg-primary transition-all shadow-sm ring-1 ring-secondary-container/30" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] mr-1.5 text-secondary-container">chat</span>
+<span>Konsultasi Gratis</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- MAIN CONTENT CONTAINER -->
+<!-- ========================================================================= -->
+<main class="w-full pt-32 sm:pt-28">
+<!-- 1. HERO SECTION (Wireframe No Photo) -->
+<section class="relative w-full overflow-hidden bg-primary-container text-on-primary py-16 sm:py-24 lg:py-28">
+<div class="absolute inset-0 z-0 opacity-15 pointer-events-none" style="background-image: radial-gradient(#fdc268 1px, transparent 1px); background-size: 28px 28px;"></div>
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
+<!-- Tagline / Badge -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-lowest/10 backdrop-blur-md shadow-sm mb-6 text-on-primary border border-surface-container-lowest/20">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">forest</span>
+<span class="font-headline text-xs tracking-wider uppercase text-secondary-container font-bold">Official Provider • outboundjatim.web.id</span>
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+</div>
+<!-- H1 Headline -->
+<div class="max-w-4xl space-y-6">
+<h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-primary tracking-tight leading-tight sm:leading-snug">
+            Solusi Outbound &amp; Team Building Terbaik di Seluruh <span class="text-secondary-container underline decoration-secondary decoration-wavy decoration-2 underline-offset-8">Jawa Timur</span>: Batu Malang, Trawas, Pacet, Bromo, hingga Banyuwangi!
+          </h1>
+<p class="text-base sm:text-lg text-surface-container-high/90 max-w-2xl leading-relaxed">
+            Bangun kekompakan, kepemimpinan, dan sinergi tim perusahaan Anda dengan program <span class="text-secondary-container font-semibold">experiential learning</span> interaktif, fasilitator tersertifikasi BNSP, dan venue alam pegunungan terbaik se-Jawa Timur.
+          </p>
+<!-- 2 CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+<a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-secondary-container text-on-secondary-fixed font-headline text-sm font-bold shadow-lg hover:bg-secondary-fixed transition-all hover:scale-[1.01]" href="#paket-populer">
+<span class="material-symbols-outlined text-[20px]">assignment_add</span>
+<span>Pilih Paket &amp; Dapatkan Brosur</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-surface-container-lowest text-primary-container font-headline text-sm font-bold shadow hover:bg-surface-container-low transition-all" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-emerald-600 text-[20px]">chat</span>
+<span>Konsultasi via WhatsApp (Fast Respon)</span>
+</a>
+</div>
+</div>
+<!-- Stats Bar -->
+<div class="mt-14 pt-8 border-t border-surface-container-lowest/15 grid grid-cols-2 md:grid-cols-4 gap-6 text-on-primary">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">corporate_fare</span>
+<span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">500+</span>
+</div>
+<span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Corporate Clients Puas</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span>
+<span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">100%</span>
+</div>
+<span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Fasilitator BNSP Certified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">pin_drop</span>
+<span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">35+</span>
+</div>
+<span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Venue Eksklusif di Jatim</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">health_and_safety</span>
+<span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">99.8%</span>
+</div>
+<span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Safety &amp; Satisfaction Rate</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. TENTANG KAMI SECTION -->
+<section class="py-16 sm:py-24 bg-surface text-on-surface" id="tentang-kami">
+<div class="max-w-7xl mx-auto px-4 sm:px-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-0.5 bg-secondary"></span>
+<span class="font-headline text-xs font-bold text-primary-container tracking-widest uppercase">TENTANG OUTBOUND JATIM</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-5">
+<h2 class="font-headline text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-container leading-tight">
+              Membentuk Tim Juara Melalui Petualangan Bermakna di Alam Bebas Jawa Timur
+            </h2>
+<p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Outbound Jatim</strong> (<span class="text-primary-container font-medium">outboundjatim.web.id</span>) bukan sekadar penyedia fun games biasa. Kami mengintegrasikan metodologi <em>experiential learning</em> berbobot, simulasi kepemimpinan dinamis, dan tantangan alam terbuka yang diselaraskan dengan budaya serta <em>key performance indicators</em> (KPI) organisasi Anda.
+            </p>
+<p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              Didukung oleh instruktur berlisensi resmi BNSP (Badan Nasional Sertifikasi Profesi) dan standar operasional keselamatan berstandar internasional, setiap program kami rancang untuk memicu terobosan komunikasi, ketangguhan mental, dan loyalitas tanpa mengabaikan aspek kenyamanan eksekutif.
+            </p>
+<!-- 3 Core Value Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container mb-3">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+</div>
+<h3 class="font-headline text-sm font-bold text-on-surface mb-1">Standar SOP Safety</h3>
+<p class="text-xs text-on-surface-variant">Protokol keamanan berstandar internasional dengan asuransi all-risk.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<h3 class="font-headline text-sm font-bold text-on-surface mb-1">Trainer BNSP</h3>
+<p class="text-xs text-on-surface-variant">Fasilitator berpengalaman 10+ tahun membimbing korporasi besar.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary-container mb-3">
+<span class="material-symbols-outlined text-[20px]">all_inclusive</span>
+</div>
+<h3 class="font-headline text-sm font-bold text-on-surface mb-1">All-in-One Turnkey</h3>
+<p class="text-xs text-on-surface-variant">Transportasi, konsumsi higienis, tenda/hotel, &amp; drone footage.</p>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary-container text-on-primary font-headline text-sm font-semibold hover:bg-primary transition-colors" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span>Pelajari Lebih Lanjut Tentang Kami</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Wireframe Diagram Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-highest border border-outline-variant/40">
+<div class="w-full h-80 bg-surface-container-high flex flex-col items-center justify-center p-6 text-center">
+<span class="material-symbols-outlined text-[48px] text-primary-container/40 mb-2">landscape</span>
+<span class="font-headline text-xs tracking-wider text-primary-container/70 font-bold mb-1">[ WIREFRAME PLACEHOLDER ]</span>
+<span class="text-xs text-on-surface-variant max-w-xs">Dokumentasi Trainer BNSP &amp; Peserta di Hutan Pinus Batu Malang</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/95 via-primary-container/50 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-on-primary">
+<div class="flex items-center gap-2 text-secondary-container mb-1.5">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span class="font-headline text-[11px] font-bold uppercase tracking-wider">AKREDITASI NASIONAL</span>
+</div>
+<p class="font-headline text-base sm:text-lg font-bold leading-snug">
+                  Penyelenggara Resmi Pelatihan Luar Ruang Jawa Timur
+                </p>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/20 backdrop-blur-md text-xs">Outdoor Adventure</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/20 backdrop-blur-md text-xs">Ice Breaking</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/20 backdrop-blur-md text-xs">Leadership Camp</span>
+</div>
+</div>
+</div>
+<!-- Floating Counter -->
+<div class="absolute -bottom-5 -right-2 sm:right-4 bg-surface-container-lowest p-3.5 rounded-xl shadow-lg flex items-center gap-3 border border-outline-variant/40">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[22px]">thumb_up</span>
+</div>
+<div>
+<div class="font-headline text-lg font-bold text-primary-container">12,500+</div>
+<div class="text-xs text-on-surface-variant">Peserta Berpartisipasi</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. MENGAPA MEMILIH OUTBOUND JATIM -->
+<section class="py-16 sm:py-24 bg-surface-container-low text-on-surface" id="mengapa-kami">
+<div class="max-w-7xl mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+<div class="inline-flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary-container font-headline text-xs font-bold tracking-widest uppercase">
+            KEUNGGULAN UTAMA
+          </div>
+<h2 class="font-headline text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-container">
+            Mengapa Ratusan Perusahaan Memilih Outbound Jatim?
+          </h2>
+<p class="text-sm sm:text-base text-on-surface-variant">
+            Kami mengutamakan keselamatan, hasil pelatihan nyata, dan pengalaman berkesan tanpa repot mengurus detail teknis.
+          </p>
+</div>
+<!-- 4 Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/30">
+<div class="space-y-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-primary-container text-primary-container group-hover:text-secondary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">verified_user</span>
+</div>
+<h3 class="font-headline text-base font-bold text-on-surface leading-snug">
+                Instruktur &amp; Trainer Tersertifikasi BNSP
+              </h3>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Fasilitator kami memegang lisensi kepemanduan outbound nasional resmi. Mampu mengelola dinamika kelompok secara terarah.
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-surface-container flex items-center text-primary-container font-headline text-xs font-semibold">
+<span>Standar Kompetensi Resmi</span>
+<span class="material-symbols-outlined text-[16px] ml-1">check_circle</span>
+</div>
+</div>
+<div class="group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/30">
+<div class="space-y-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-primary-container text-primary-container group-hover:text-secondary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">tune</span>
+</div>
+<h3 class="font-headline text-base font-bold text-on-surface leading-snug">
+                Kustomisasi Modul Sesuai Goal Perusahaan
+              </h3>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Rancangan program spesifik untuk leadership, sinergi lintas divisi, komunikasi asertif, maupun refreshment tim kerja.
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-surface-container flex items-center text-primary-container font-headline text-xs font-semibold">
+<span>Tailor-Made Modules</span>
+<span class="material-symbols-outlined text-[16px] ml-1">check_circle</span>
+</div>
+</div>
+<div class="group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/30">
+<div class="space-y-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-primary-container text-primary-container group-hover:text-secondary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">terrain</span>
+</div>
+<h3 class="font-headline text-base font-bold text-on-surface leading-snug">
+                Jaringan Venue Terbaik di Seluruh Jatim
+              </h3>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Akses mitra eksklusif ke spot premium: Coban Rondo, Songgoriti Batu, Trawas, Pacet, Bromo Tosari, Kasembon, hingga Banyuwangi.
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-surface-container flex items-center text-primary-container font-headline text-xs font-semibold">
+<span>Aksesibilitas Terbaik</span>
+<span class="material-symbols-outlined text-[16px] ml-1">check_circle</span>
+</div>
+</div>
+<div class="group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/30">
+<div class="space-y-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-primary-container text-primary-container group-hover:text-secondary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[28px]">price_check</span>
+</div>
+<h3 class="font-headline text-base font-bold text-on-surface leading-snug">
+                Fasilitas Lengkap &amp; Tanpa Biaya Tersembunyi
+              </h3>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Semua paket transparan mencakup konsumsi higienis, tim P3K siaga, tenda/resort, perizinan lokasi, serta tim dokumentasi drone.
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-surface-container flex items-center text-primary-container font-headline text-xs font-semibold">
+<span>Transparansi Biaya 100%</span>
+<span class="material-symbols-outlined text-[16px] ml-1">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. KATEGORI PAKET PALING POPULER -->
+<section class="py-16 sm:py-24 bg-surface text-on-surface" id="paket-populer">
+<div class="max-w-7xl mx-auto px-4 sm:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div class="max-w-2xl space-y-2.5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-headline text-xs font-bold tracking-widest uppercase">
+              PILIHAN PROGRAM FAVORIT
+            </div>
+<h2 class="font-headline text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-container">
+              Kategori Paket Outbound Paling Populer
+            </h2>
+<p class="text-sm sm:text-base text-on-surface-variant">
+              Pilihan program unggulan yang paling diminati perusahaan BUMN, swasta multinasional, instansi pemerintah, dan komunitas perbankan.
+            </p>
+</div>
+<!-- Tabs -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-headline text-xs font-semibold shadow-sm">Semua Paket</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-headline text-xs font-semibold transition-colors">Team Building</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-headline text-xs font-semibold transition-colors">Rafting</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-headline text-xs font-semibold transition-colors">Camping</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-headline text-xs font-semibold transition-colors">Paintball</button>
+</div>
+</div>
+<!-- 3 Packages Wireframe Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-outline-variant/40 flex flex-col">
+<div class="relative h-56 bg-surface-container-high flex flex-col items-center justify-center text-center p-4 border-b border-outline-variant/30">
+<span class="material-symbols-outlined text-[44px] text-primary-container/40 mb-1">groups</span>
+<span class="font-headline text-xs text-primary-container/70 font-bold uppercase tracking-wider">[ WIREFRAME: TEAM BUILDING &amp; LEADERSHIP ]</span>
+<div class="absolute top-3.5 left-3.5">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-headline text-[10px] font-extrabold tracking-wider">
+                  BEST SELLER
+                </span>
+</div>
+<div class="absolute bottom-3 left-3.5 right-3.5 flex items-center justify-between text-xs font-headline font-semibold text-primary-container bg-surface-container-lowest/80 backdrop-blur-sm px-2.5 py-1 rounded">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>Batu Malang • Trawas</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">groups</span>30 - 500+ Pax</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2.5">
+<h3 class="font-headline text-base font-bold text-primary-container leading-snug">
+                  Corporate Team Building &amp; Leadership Camp
+                </h3>
+<p class="text-xs text-on-surface-variant line-clamp-2">
+                  Program intensif interaktif untuk mengasah sinergi kepemimpinan, pemecahan masalah bersama, dan peleburan sekat antar divisi.
+                </p>
+<div class="space-y-1.5 pt-2">
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Modul Experiential Learning + Trainer BNSP</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Sound System Outdoor &amp; Alat Peraga Lengkap</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Snack, Makan Siang Prasmanan &amp; Banner</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Dokumentasi Foto &amp; Video Highlight</span>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between">
+<div>
+<span class="text-[11px] text-on-surface-variant block">Mulai dari</span>
+<span class="font-headline text-base font-extrabold text-primary-container">Rp 175.000<span class="text-xs font-normal text-on-surface-variant"> /pax</span></span>
+</div>
+<a class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-headline text-xs font-bold hover:bg-primary transition-colors" href="https://wa.me/6281234567890?text=Halo%20Outbound%20Jatim,%20saya%20tertarik%20detail%20Corporate%20Team%20Building" rel="noopener noreferrer" target="_blank">
+                  Detail Paket
+                </a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-outline-variant/40 flex flex-col">
+<div class="relative h-56 bg-surface-container-high flex flex-col items-center justify-center text-center p-4 border-b border-outline-variant/30">
+<span class="material-symbols-outlined text-[44px] text-primary-container/40 mb-1">kayaking</span>
+<span class="font-headline text-xs text-primary-container/70 font-bold uppercase tracking-wider">[ WIREFRAME: EXTREME RAFTING KASEMBON ]</span>
+<div class="absolute top-3.5 left-3.5">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-headline text-[10px] font-extrabold tracking-wider border border-outline-variant/40">
+                  FAVORIT ADRENALIN
+                </span>
+</div>
+<div class="absolute bottom-3 left-3.5 right-3.5 flex items-center justify-between text-xs font-headline font-semibold text-primary-container bg-surface-container-lowest/80 backdrop-blur-sm px-2.5 py-1 rounded">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>Kasembon • Kaliwatu</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">groups</span>15 - 300+ Pax</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2.5">
+<h3 class="font-headline text-base font-bold text-primary-container leading-snug">
+                  Extreme Rafting &amp; Adventure Package
+                </h3>
+<p class="text-xs text-on-surface-variant line-clamp-2">
+                  Pacu adrenalin dan keberanian bersama rekan kerja melalui jeram sungai grade 2-3+ yang seru, aman, dan menyegarkan.
+                </p>
+<div class="space-y-1.5 pt-2">
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Perahu Karet, Dayung, Helm, &amp; Life Jacket SNI</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Skipper Bersertifikat &amp; Tim Rescue Siaga</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Welcome Drink, Kelapa Muda &amp; Makan Siang</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Asuransi Jiwa Peserta &amp; Shuttle Lokal</span>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between">
+<div>
+<span class="text-[11px] text-on-surface-variant block">Mulai dari</span>
+<span class="font-headline text-base font-extrabold text-primary-container">Rp 215.000<span class="text-xs font-normal text-on-surface-variant"> /pax</span></span>
+</div>
+<a class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-headline text-xs font-bold hover:bg-primary transition-colors" href="https://wa.me/6281234567890?text=Halo%20Outbound%20Jatim,%20saya%20tertarik%20detail%20Extreme%20Rafting" rel="noopener noreferrer" target="_blank">
+                  Detail Paket
+                </a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-outline-variant/40 flex flex-col">
+<div class="relative h-56 bg-surface-container-high flex flex-col items-center justify-center text-center p-4 border-b border-outline-variant/30">
+<span class="material-symbols-outlined text-[44px] text-primary-container/40 mb-1">cabin</span>
+<span class="font-headline text-xs text-primary-container/70 font-bold uppercase tracking-wider">[ WIREFRAME: PINE FOREST RETREAT ]</span>
+<div class="absolute top-3.5 left-3.5">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-headline text-[10px] font-extrabold tracking-wider">
+                  EKSKLUSIF ALAM
+                </span>
+</div>
+<div class="absolute bottom-3 left-3.5 right-3.5 flex items-center justify-between text-xs font-headline font-semibold text-primary-container bg-surface-container-lowest/80 backdrop-blur-sm px-2.5 py-1 rounded">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>Coban Rondo • Bromo</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">groups</span>20 - 200 Pax</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2.5">
+<h3 class="font-headline text-base font-bold text-primary-container leading-snug">
+                  Pine Forest Camping &amp; Gathering Retreat
+                </h3>
+<p class="text-xs text-on-surface-variant line-clamp-2">
+                  Menginap di sejuknya hawa pegunungan dengan kenyamanan glamping, kehangatan api unggun, dan keakraban malam kebersamaan.
+                </p>
+<div class="space-y-1.5 pt-2">
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Tenda Dome / Glamping Matras &amp; Sleeping Bag</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Sesi Api Unggun, Night Session, &amp; BBQ Party</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>3x Makan Prasmanan &amp; Coffee Break</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface text-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Morning Soft Trekking &amp; Fun Energizer</span>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between">
+<div>
+<span class="text-[11px] text-on-surface-variant block">Mulai dari</span>
+<span class="font-headline text-base font-extrabold text-primary-container">Rp 385.000<span class="text-xs font-normal text-on-surface-variant"> /pax</span></span>
+</div>
+<a class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-headline text-xs font-bold hover:bg-primary transition-colors" href="https://wa.me/6281234567890?text=Halo%20Outbound%20Jatim,%20saya%20tertarik%20detail%20Pine%20Forest%20Camping" rel="noopener noreferrer" target="_blank">
+                  Detail Paket
+                </a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-surface-container-high text-primary-container font-headline text-sm font-bold hover:bg-primary-container hover:text-on-primary transition-all border border-outline-variant/50" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span>Lihat Semua Paket Lengkap Outbound Jatim</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. TESTIMONI KLIEN KORPORAT -->
+<section class="py-16 sm:py-24 bg-surface-container text-on-surface" id="testimoni">
+<div class="max-w-7xl mx-auto px-4 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+<div class="inline-flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-headline text-xs font-bold tracking-widest uppercase">
+            KEPUASAN KORPORAT
+          </div>
+<h2 class="font-headline text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-container">
+            Cerita Sukses &amp; Pengalaman Rekan Bisnis Kami
+          </h2>
+<p class="text-sm sm:text-base text-on-surface-variant">
+            Kepuasan klien adalah bukti dedikasi kami dalam menghadirkan program outbound yang berdampak nyata, berenergi tinggi, dan zero-accident.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-4 border border-outline-variant/30">
+<div class="space-y-3">
+<div class="flex items-center text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant italic leading-relaxed">
+                “Agenda capacity building 120 staf kami di Songgoriti Batu Malang berjalan luar biasa lancar. Fasilitator dari Outbound Jatim sangat interaktif, game-nya bermakna dan memecah silo antar divisi. Rekomendasi terbaik untuk event BUMN!”
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-surface-container">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-container flex items-center justify-center font-bold text-base">
+                M
+              </div>
+<div>
+<div class="font-headline text-xs sm:text-sm font-bold text-on-surface">Rian Daniswara, S.Psi</div>
+<div class="text-[11px] text-on-surface-variant">HRD Regional • Bank Mandiri Surabaya</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-4 border border-outline-variant/30">
+<div class="space-y-3">
+<div class="flex items-center text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant italic leading-relaxed">
+                “Rombongan kami ambil paket kombinasi Outbound di Trawas dan Rafting Kasembon. SOP keamanannya top, makanan prasmanan enak berlimpah, dan dokumentasi drone langsung jadi keesokan harinya. Sangat profesional!”
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-surface-container">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-base">
+                A
+              </div>
+<div>
+<div class="font-headline text-xs sm:text-sm font-bold text-on-surface">Dewi Laksmitasari</div>
+<div class="text-[11px] text-on-surface-variant">Corporate Secretary • PT Astra Jatim</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-4 border border-outline-variant/30">
+<div class="space-y-3">
+<div class="flex items-center text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant italic leading-relaxed">
+                “Proposal administratif sangat rapi dan lengkap dengan legalitas CV/PT, faktur pajak resmi, dan sertifikat BNSP instruktur. Memudahkan proses verifikasi anggaran dinas kami. Terima kasih Outbound Jatim.”
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-surface-container">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-base">
+                P
+              </div>
+<div>
+<div class="font-headline text-xs sm:text-sm font-bold text-on-surface">Drs. Bambang Hariyanto</div>
+<div class="text-[11px] text-on-surface-variant">Bagian Umum • Dinas Pemprov Jatim</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. FAQ INTERAKTIF ACCORDION -->
+<section class="py-16 sm:py-24 bg-surface text-on-surface">
+<div class="max-w-4xl mx-auto px-4 sm:px-8">
+<div class="text-center mb-12 space-y-3">
+<div class="inline-flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary-container font-headline text-xs font-bold tracking-widest uppercase">
+            FAQ • PERTANYAAN UMUM
+          </div>
+<h2 class="font-headline text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-container">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+<p class="text-sm sm:text-base text-on-surface-variant">
+            Semua informasi penting seputar pemesanan, lokasi, dan persiapan kegiatan outbound Anda di Jawa Timur.
+          </p>
+</div>
+<div class="space-y-3" id="faq-container">
+<div class="rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/40 overflow-hidden transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between gap-4 text-left font-headline text-sm sm:text-base text-on-surface font-semibold hover:text-primary-container transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Apakah lokasi kegiatan bisa disesuaikan dengan permintaan kantor kami?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200 text-[20px]">expand_more</span>
+</button>
+<div class="faq-content px-5 pb-4 pt-0 hidden text-on-surface-variant text-xs sm:text-sm leading-relaxed border-t border-surface-container/60">
+              Ya, sangat bisa! Selain rekomendasi venue terbaik kami di Batu Malang, Trawas Mojokerto, Pacet, Bromo, Tretes, dan Banyuwangi, kami juga siap menggelar kegiatan di hotel, resort, atau lapangan terbuka milik instansi/perusahaan Anda di seluruh Jawa Timur.
+            </div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/40 overflow-hidden transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between gap-4 text-left font-headline text-sm sm:text-base text-on-surface font-semibold hover:text-primary-container transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Berapa minimal jumlah peserta untuk mengadakan kegiatan outbound?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200 text-[20px]">expand_more</span>
+</button>
+<div class="faq-content px-5 pb-4 pt-0 hidden text-on-surface-variant text-xs sm:text-sm leading-relaxed border-t border-surface-container/60">
+              Minimal peserta untuk paket hemat kami adalah 20 hingga 30 orang. Namun kami berpengalaman menangani gathering akbar perusahaan hingga kapasitas 1.500+ peserta dengan pembagian rotasi zona games yang tertata rapi.
+            </div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/40 overflow-hidden transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between gap-4 text-left font-headline text-sm sm:text-base text-on-surface font-semibold hover:text-primary-container transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Apakah sudah termasuk asuransi dan tim medis saat kegiatan?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200 text-[20px]">expand_more</span>
+</button>
+<div class="faq-content px-5 pb-4 pt-0 hidden text-on-surface-variant text-xs sm:text-sm leading-relaxed border-t border-surface-container/60">
+              Seluruh paket Outbound Jatim telah mencakup asuransi kegiatan kelompok dan kotak pertolongan pertama (P3K) standar outdoor. Untuk kegiatan high-impact seperti rafting atau offroad, tim medis pendamping dan armada ambulans siaga dapat ditambahkan dalam paket.
+            </div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/40 overflow-hidden transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between gap-4 text-left font-headline text-sm sm:text-base text-on-surface font-semibold hover:text-primary-container transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Bagaimana cara mendapatkan proposal dan penawaran harga resmi?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200 text-[20px]">expand_more</span>
+</button>
+<div class="faq-content px-5 pb-4 pt-0 hidden text-on-surface-variant text-xs sm:text-sm leading-relaxed border-t border-surface-container/60">
+              Cukup klik tombol “Konsultasi via WhatsApp” atau ajukan penawaran. Sampaikan estimasi tanggal kegiatan, perkiraan pax, dan lokasi yang diinginkan. Tim Account Executive kami akan mengirimkan file PDF proposal komprehensif maksimal dalam 1x24 jam kerja.
+            </div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/40 overflow-hidden transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between gap-4 text-left font-headline text-sm sm:text-base text-on-surface font-semibold hover:text-primary-container transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Apa saja perlengkapan yang perlu dipersiapkan oleh peserta?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200 text-[20px]">expand_more</span>
+</button>
+<div class="faq-content px-5 pb-4 pt-0 hidden text-on-surface-variant text-xs sm:text-sm leading-relaxed border-t border-surface-container/60">
+              Peserta cukup menyiapkan pakaian olahraga yang nyaman, sepatu kets/outdoor, baju ganti (khusus rafting/paintball), obat-obatan pribadi khusus, dan perlengkapan mandi bila menginap. Tim kami akan membagikan lembar panduan “Preparation Checklist” digital H-7 sebelum acara.
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. BOTTOM CALL TO ACTION BANNER -->
+<section class="relative w-full overflow-hidden bg-primary-container text-on-primary py-16 sm:py-20">
+<div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest/10 backdrop-blur-md border border-surface-container-lowest/20">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span class="font-headline text-xs text-secondary-container tracking-wider uppercase font-bold">SIAP BEKERJA SAMA • OUTBOUNDJATIM.WEB.ID</span>
+</div>
+<h2 class="font-headline text-2xl sm:text-3xl lg:text-4xl font-extrabold text-on-primary tracking-tight leading-tight max-w-3xl mx-auto">
+          Siap Mewujudkan Agenda Outbound Terbaik untuk Tim Anda?
+        </h2>
+<p class="text-sm sm:text-base text-surface-container-high/90 max-w-2xl mx-auto leading-relaxed">
+          Hubungi tim konsultan kami sekarang untuk mendapatkan penawaran spesial, survei lokasi gratis, dan modul yang dirancang khusus untuk mewujudkan tujuan strategis organisasi Anda.
+        </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-secondary-container text-on-secondary-fixed font-headline text-sm font-bold shadow-md hover:bg-secondary-fixed transition-all" href="https://wa.me/6281234567890?text=Halo%20Outbound%20Jatim,%20saya%20ingin%20unduh%20E-Katalog%20dan%20Proposal" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download E-Katalog &amp; Proposal Outbound Jatim</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-surface-container-lowest text-primary-container font-headline text-sm font-bold shadow hover:bg-surface-container-low transition-all" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-emerald-600">chat</span>
+<span>Konsultasi WhatsApp Langsung (24 Jam Online)</span>
+</a>
+</div>
+<div class="pt-6 flex flex-wrap items-center justify-center gap-6 text-surface-container-high/80 text-xs sm:text-sm font-medium">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-container">task_alt</span> Respon Cepat &lt; 15 Menit</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-container">task_alt</span> Free Site Inspection</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-container">task_alt</span> Faktur Pajak Resmi PPh/PPN</span>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- FOOTER (3 KOLOM RAPI TANPA EXTRA WHITESPACE) -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-surface-container-low border-t border-outline-variant/40 text-on-surface py-12 px-4 sm:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-outline-variant/30">
+<!-- Kolom 1 -->
+<div class="space-y-3">
+<h4 class="font-headline text-sm font-bold uppercase tracking-wider text-primary-container">Navigasi Cepat</h4>
+<ul class="space-y-2 text-xs sm:text-sm text-on-surface-variant">
+<li><a class="hover:text-primary-container transition-colors" href="#">Beranda</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#tentang-kami">Tentang Kami</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#paket-populer">Layanan</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#testimoni">Galeri</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#faq-container">Blog</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#faq-container">FAQ</a></li>
+</ul>
+</div>
+<!-- Kolom 2 -->
+<div class="space-y-3">
+<h4 class="font-headline text-sm font-bold uppercase tracking-wider text-primary-container">Kategori Paket</h4>
+<ul class="space-y-2 text-xs sm:text-sm text-on-surface-variant">
+<li><a class="hover:text-primary-container transition-colors" href="#paket-populer">Corporate Team Building Batu</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#paket-populer">Executive White Water Rafting</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#paket-populer">Leadership Camp &amp; Glamping Trawas</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#paket-populer">Tactical Paintball Battle Pacet</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#paket-populer">Custom Institutional Gathering</a></li>
+</ul>
+</div>
+<!-- Kolom 3 -->
+<div class="space-y-3">
+<h4 class="font-headline text-sm font-bold uppercase tracking-wider text-primary-container">Kontak &amp; Area Operasional</h4>
+<ul class="space-y-2.5 text-xs sm:text-sm text-on-surface-variant">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container shrink-0 mt-0.5">location_on</span>
+<span><strong>Kantor Operasional:</strong> Jl. Oro-Oro Ombo No. 88, Batu Malang</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container shrink-0 mt-0.5">corporate_fare</span>
+<span><strong>Representative Office:</strong> Intiland Tower Lt. 3, Surabaya</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container shrink-0">mail</span>
+<a class="hover:text-primary-container transition-colors" href="mailto:info@outboundjatim.web.id">info@outboundjatim.web.id</a>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container shrink-0">call</span>
+<a class="hover:text-primary-container transition-colors" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">+62 812-3456-7890 (24/7 Hotline WhatsApp)</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Copyright row -->
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-on-surface-variant gap-3">
+<p>© 2025 Outbound Jatim. Seluruh Hak Cipta Dilindungi.</p>
+<div class="flex items-center gap-5">
+<a class="hover:text-primary-container transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-primary-container transition-colors" href="#">Syarat &amp; Ketentuan</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+      
+      document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-container .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
+      
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+  </script>
+</body></html>
