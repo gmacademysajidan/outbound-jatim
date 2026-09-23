@@ -708,6 +708,9 @@ for article in blogs_data:
   <script type="application/ld+json">
   {faq_ld_json}
   </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="../assets/img/favicon-removebg-preview.webp"/>
+  <link rel="apple-touch-icon" href="../assets/img/favicon-removebg-preview.webp"/>
 </head>
 <body class="bg-background font-body text-on-surface antialiased flex flex-col min-h-screen">
 

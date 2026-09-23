@@ -857,6 +857,9 @@ for pkg in packages_data:
       font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }}
   </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="../assets/img/favicon-removebg-preview.webp"/>
+  <link rel="apple-touch-icon" href="../assets/img/favicon-removebg-preview.webp"/>
 </head>
 <body class="bg-background font-body text-on-surface antialiased flex flex-col min-h-screen">
 
