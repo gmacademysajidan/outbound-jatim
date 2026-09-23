@@ -1,0 +1,6 @@
+# Robots.txt for Outbound Jatim
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://outboundjatim.com/sitemap.xml
