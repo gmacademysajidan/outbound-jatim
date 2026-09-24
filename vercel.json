@@ -2,6 +2,10 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/detailpaket", "destination": "/detail-paket.html" },
+    { "source": "/detail-paket", "destination": "/detail-paket.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
