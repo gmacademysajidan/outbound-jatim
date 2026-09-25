@@ -43,13 +43,8 @@ topbar_nav_header_subfolder = '''  <!-- NAVBAR & TOP BAR (UNIFIED) -->
       <div class="max-w-7xl mx-auto h-full px-4 sm:px-8 flex items-center justify-between gap-4">
         <!-- Logo -->
         <a class="flex items-center gap-3 shrink-0 group" href="../index.html">
-          <div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:scale-105 transition-transform">
-            <span class="material-symbols-outlined text-[24px]">hiking</span>
-          </div>
-          <div class="flex flex-col">
-            <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
-            <span class="text-[10px] font-headline font-semibold uppercase tracking-widest text-secondary mt-0.5">Provider Jatim</span>
-          </div>
+          <img src="../assets/img/Favicon-navbar.webp" alt="Logo Outbound Jatim" class="w-10 h-10 rounded-xl object-cover shadow-sm group-hover:scale-105 transition-transform" />
+          <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
         </a>
 
         <!-- Desktop Menu Links -->
@@ -153,9 +148,7 @@ footer_code_subfolder = '''  <!-- FOOTER -->
         
         <div class="lg:col-span-4 space-y-4">
           <a class="flex items-center gap-3 group" href="../index.html">
-            <div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:scale-105 transition-transform">
-              <span class="material-symbols-outlined text-[24px]">hiking</span>
-            </div>
+            <img src="../assets/img/Favicon-navbar.webp" alt="Logo Outbound Jatim" class="w-10 h-10 rounded-xl object-cover shadow-sm group-hover:scale-105 transition-transform" />
             <div class="flex flex-col">
               <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
               <span class="text-[10px] font-headline font-semibold uppercase tracking-widest text-secondary mt-0.5">Provider Outbound &amp; Gathering</span>
@@ -858,8 +851,8 @@ for pkg in packages_data:
     }}
   </style>
   <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="../assets/img/favicon-removebg-preview.webp"/>
-  <link rel="apple-touch-icon" href="../assets/img/favicon-removebg-preview.webp"/>
+  <link rel="icon" type="image/webp" href="../assets/img/Favicon-navbar.webp"/>
+  <link rel="apple-touch-icon" href="../assets/img/Favicon-navbar.webp"/>
 </head>
 <body class="bg-background font-body text-on-surface antialiased flex flex-col min-h-screen">
 

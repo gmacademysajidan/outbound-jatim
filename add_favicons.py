@@ -5,14 +5,14 @@ base_dir = r'c:\outboundjatim'
 
 # Favicon tags for root HTML files
 root_favicon_tag = '''  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="assets/img/favicon-removebg-preview.webp"/>
-  <link rel="apple-touch-icon" href="assets/img/favicon-removebg-preview.webp"/>
+  <link rel="icon" type="image/webp" href="assets/img/Favicon-navbar.webp"/>
+  <link rel="apple-touch-icon" href="assets/img/Favicon-navbar.webp"/>
 </head>'''
 
 # Favicon tags for subfolder HTML files
 subfolder_favicon_tag = '''  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="../assets/img/favicon-removebg-preview.webp"/>
-  <link rel="apple-touch-icon" href="../assets/img/favicon-removebg-preview.webp"/>
+  <link rel="icon" type="image/webp" href="../assets/img/Favicon-navbar.webp"/>
+  <link rel="apple-touch-icon" href="../assets/img/Favicon-navbar.webp"/>
 </head>'''
 
 # 1. Update generate_details.py
@@ -21,10 +21,10 @@ if os.path.exists(details_gen_path):
     with open(details_gen_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    if 'favicon-removebg-preview.webp' not in content:
+    if 'Favicon-navbar.webp' not in content:
         content = content.replace('</head>', '''  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="../assets/img/favicon-removebg-preview.webp"/>
-  <link rel="apple-touch-icon" href="../assets/img/favicon-removebg-preview.webp"/>
+  <link rel="icon" type="image/webp" href="../assets/img/Favicon-navbar.webp"/>
+  <link rel="apple-touch-icon" href="../assets/img/Favicon-navbar.webp"/>
 </head>''', 1)
         with open(details_gen_path, 'w', encoding='utf-8') as f:
             f.write(content)
@@ -36,10 +36,10 @@ if os.path.exists(blogs_gen_path):
     with open(blogs_gen_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    if 'favicon-removebg-preview.webp' not in content:
+    if 'Favicon-navbar.webp' not in content:
         content = content.replace('</head>', '''  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="../assets/img/favicon-removebg-preview.webp"/>
-  <link rel="apple-touch-icon" href="../assets/img/favicon-removebg-preview.webp"/>
+  <link rel="icon" type="image/webp" href="../assets/img/Favicon-navbar.webp"/>
+  <link rel="apple-touch-icon" href="../assets/img/Favicon-navbar.webp"/>
 </head>''', 1)
         with open(blogs_gen_path, 'w', encoding='utf-8') as f:
             f.write(content)
@@ -60,7 +60,7 @@ for root, dirs, files in os.walk(base_dir):
             with open(file_path, 'r', encoding='utf-8') as f:
                 html_code = f.read()
             
-            if 'favicon-removebg-preview.webp' not in html_code and '</head>' in html_code:
+            if 'Favicon-navbar.webp' not in html_code and '</head>' in html_code:
                 html_code = html_code.replace('</head>', target_favicon_code, 1)
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(html_code)

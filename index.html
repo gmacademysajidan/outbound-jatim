@@ -138,8 +138,8 @@
   }
   </script>
   <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="assets/img/favicon-removebg-preview.webp"/>
-  <link rel="apple-touch-icon" href="assets/img/favicon-removebg-preview.webp"/>
+  <link rel="icon" type="image/webp" href="assets/img/Favicon-navbar.webp"/>
+  <link rel="apple-touch-icon" href="assets/img/Favicon-navbar.webp"/>
 </head>
 <body class="bg-background font-sans text-on-surface antialiased">
 
@@ -169,13 +169,8 @@
       <div class="max-w-7xl mx-auto h-full px-4 sm:px-8 flex items-center justify-between gap-4">
         <!-- Logo -->
         <a class="flex items-center gap-3 shrink-0 group" href="index.html">
-          <div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:scale-105 transition-transform">
-            <span class="material-symbols-outlined text-[24px]">hiking</span>
-          </div>
-          <div class="flex flex-col">
-            <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
-            <span class="text-[10px] font-headline font-semibold uppercase tracking-widest text-secondary mt-0.5">Provider Jatim</span>
-          </div>
+          <img src="assets/img/Favicon-navbar.webp" alt="Logo Outbound Jatim" class="w-10 h-10 rounded-xl object-cover shadow-sm group-hover:scale-105 transition-transform" />
+          <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
         </a>
 
         <!-- Desktop Menu Links -->
@@ -280,70 +275,96 @@
   <main class="w-full pt-32 sm:pt-28">
     
     <!-- 1. HERO SECTION -->
-    <section class="relative w-full overflow-hidden bg-primary-container text-on-primary py-16 sm:py-24 lg:py-28">
-      <div class="absolute inset-0 z-0 opacity-15 pointer-events-none" style="background-image: radial-gradient(#fdc268 1px, transparent 1px); background-size: 28px 28px;"></div>
-      <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
-      <div class="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+    <section class="relative w-full overflow-hidden text-white py-20 sm:py-28 lg:py-32">
+      <!-- Background Image -->
+      <img src="assets/img/background.webp" alt="Background Outbound Jatim" class="absolute inset-0 w-full h-full object-cover object-center z-0" />
       
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
+      <!-- Overlay for High Text Readability & Contrast -->
+      <div class="absolute inset-0 z-10 bg-gradient-to-r from-[#2a070c]/90 via-[#3d0a11]/80 to-[#1e0407]/85 backdrop-brightness-95"></div>
+
+      <!-- Subtle background accents -->
+      <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-amber-500/10 blur-3xl pointer-events-none z-10"></div>
+      <div class="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-red-900/20 blur-3xl pointer-events-none z-10"></div>
+      
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-8">
         <!-- Tagline Badge -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-lowest/10 backdrop-blur-md shadow-sm mb-6 text-on-primary border border-surface-container-lowest/20">
-          <span class="material-symbols-outlined text-secondary-container text-[18px]">forest</span>
-          <span class="font-headline text-xs tracking-wider uppercase text-secondary-container font-bold">Official Provider • outboundjatim.web.id</span>
-          <span class="inline-block w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-black/40 backdrop-blur-md shadow-md mb-6 border border-white/15">
+          <span class="material-symbols-outlined text-amber-400 text-[18px]">forest</span>
+          <span class="font-headline text-xs tracking-wider uppercase text-amber-300 font-bold">Official Provider • outboundjatim.web.id</span>
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         </div>
         
-        <!-- H1 Headline -->
-        <div class="max-w-4xl space-y-6">
-          <h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-primary tracking-tight leading-tight sm:leading-snug">
-            Solusi Outbound &amp; Team Building Terbaik di Seluruh <span class="text-secondary-container underline decoration-secondary decoration-wavy decoration-2 underline-offset-8">Jawa Timur</span>: Batu Malang, Trawas, Pacet, Bromo, hingga Banyuwangi!
+        <!-- Main Headline & Subtitle -->
+        <div class="max-w-3xl space-y-6">
+          <h1 class="font-headline text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight sm:leading-none drop-shadow-md">
+            Outbound &amp; Team Building <span class="text-amber-400">Terbaik di Jawa Timur</span>
           </h1>
-          <p class="text-base sm:text-lg text-surface-container-high/90 max-w-2xl leading-relaxed">
-            Bangun kekompakan, kepemimpinan, dan sinergi tim perusahaan Anda dengan program <span class="text-secondary-container font-semibold">experiential learning</span> interaktif, fasilitator tersertifikasi BNSP, dan venue alam pegunungan terbaik se-Jawa Timur.
+          
+          <p class="text-base sm:text-xl text-amber-50/90 font-light leading-relaxed max-w-2xl drop-shadow-sm">
+            Tingkatkan sinergi, kepemimpinan, dan kekompakan tim perusahaan Anda dengan program experiential learning seru bersama fasilitator BNSP di lokasi alam terbaik Jawa Timur.
           </p>
+
+          <!-- Location Pills / Area List -->
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs sm:text-sm text-amber-200/90">
+            <span class="flex items-center gap-1 bg-black/30 px-3 py-1 rounded-full border border-white/10 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-amber-400 text-[14px]">pin_drop</span> Batu Malang
+            </span>
+            <span class="flex items-center gap-1 bg-black/30 px-3 py-1 rounded-full border border-white/10 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-amber-400 text-[14px]">pin_drop</span> Trawas
+            </span>
+            <span class="flex items-center gap-1 bg-black/30 px-3 py-1 rounded-full border border-white/10 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-amber-400 text-[14px]">pin_drop</span> Pacet
+            </span>
+            <span class="flex items-center gap-1 bg-black/30 px-3 py-1 rounded-full border border-white/10 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-amber-400 text-[14px]">pin_drop</span> Bromo
+            </span>
+            <span class="flex items-center gap-1 bg-black/30 px-3 py-1 rounded-full border border-white/10 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-amber-400 text-[14px]">pin_drop</span> Banyuwangi
+            </span>
+          </div>
           
           <!-- 2 CTA Buttons -->
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
-            <a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-secondary-container text-on-secondary-fixed font-headline text-sm font-bold shadow-lg hover:bg-secondary-fixed transition-all hover:scale-[1.01]" href="paket.html">
+            <a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-amber-400 text-amber-950 font-headline text-sm font-extrabold shadow-lg hover:bg-amber-300 transition-all hover:scale-[1.02]" href="paket.html">
               <span class="material-symbols-outlined text-[20px]">assignment_add</span>
               <span>Pilih Paket &amp; Dapatkan Brosur</span>
             </a>
-            <a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-surface-container-lowest text-primary-container font-headline text-sm font-bold shadow hover:bg-surface-container-low transition-all" href="https://wa.me/6282211221909?text=Halo%20Outbound%20Jatim,%20saya%20ingin%20konsultasi%20paket" rel="noopener noreferrer" target="_blank">
-              <span class="material-symbols-outlined text-emerald-600 text-[20px]">chat</span>
+            <a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-white/10 text-white font-headline text-sm font-bold shadow hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all" href="https://wa.me/6282211221909?text=Halo%20Outbound%20Jatim,%20saya%20ingin%20konsultasi%20paket" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-emerald-400 text-[20px]">chat</span>
               <span>Konsultasi via WhatsApp (Fast Respon)</span>
             </a>
           </div>
         </div>
         
         <!-- Stats Bar -->
-        <div class="mt-14 pt-8 border-t border-surface-container-lowest/15 grid grid-cols-2 md:grid-cols-4 gap-6 text-on-primary">
+        <div class="mt-14 p-6 sm:p-8 rounded-2xl bg-black/35 backdrop-blur-md border border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 text-white shadow-xl">
           <div class="flex flex-col">
             <div class="flex items-center gap-2">
-              <span class="material-symbols-outlined text-secondary-container text-[24px]">corporate_fare</span>
-              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">500+</span>
+              <span class="material-symbols-outlined text-amber-400 text-[24px]">corporate_fare</span>
+              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-white">500+</span>
             </div>
-            <span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Corporate Clients Puas</span>
+            <span class="text-xs sm:text-sm text-slate-200 mt-1 font-medium">Corporate Clients</span>
           </div>
           <div class="flex flex-col">
             <div class="flex items-center gap-2">
-              <span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span>
-              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">100%</span>
+              <span class="material-symbols-outlined text-amber-400 text-[24px]">verified</span>
+              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-white">100%</span>
             </div>
-            <span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Fasilitator BNSP Certified</span>
+            <span class="text-xs sm:text-sm text-slate-200 mt-1 font-medium">Fasilitator BNSP</span>
           </div>
           <div class="flex flex-col">
             <div class="flex items-center gap-2">
-              <span class="material-symbols-outlined text-secondary-container text-[24px]">pin_drop</span>
-              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">35+</span>
+              <span class="material-symbols-outlined text-amber-400 text-[24px]">pin_drop</span>
+              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-white">35+</span>
             </div>
-            <span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Venue Eksklusif di Jatim</span>
+            <span class="text-xs sm:text-sm text-slate-200 mt-1 font-medium">Venue Eksklusif Jatim</span>
           </div>
           <div class="flex flex-col">
             <div class="flex items-center gap-2">
-              <span class="material-symbols-outlined text-secondary-container text-[24px]">health_and_safety</span>
-              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-on-primary">99.8%</span>
+              <span class="material-symbols-outlined text-amber-400 text-[24px]">health_and_safety</span>
+              <span class="font-headline text-2xl sm:text-3xl font-extrabold text-white">99.8%</span>
             </div>
-            <span class="text-xs sm:text-sm text-surface-container-high/80 mt-1">Safety &amp; Satisfaction Rate</span>
+            <span class="text-xs sm:text-sm text-slate-200 mt-1 font-medium">Safety Rate</span>
           </div>
         </div>
       </div>
@@ -905,9 +926,7 @@
         <!-- Kolom 1: Nama Outbound Jatim & Profil Singkat (Sisi Kiri - Col 4) -->
         <div class="lg:col-span-4 space-y-4">
           <a class="flex items-center gap-3 group" href="index.html">
-            <div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-sm group-hover:scale-105 transition-transform">
-              <span class="material-symbols-outlined text-[24px]">hiking</span>
-            </div>
+            <img src="assets/img/Favicon-navbar.webp" alt="Logo Outbound Jatim" class="w-10 h-10 rounded-xl object-cover shadow-sm group-hover:scale-105 transition-transform" />
             <div class="flex flex-col">
               <span class="font-headline font-extrabold text-xl tracking-tight text-primary-container leading-none">OUTBOUND JATIM</span>
               <span class="text-[10px] font-headline font-semibold uppercase tracking-widest text-secondary mt-0.5">Provider Outbound &amp; Gathering</span>
@@ -991,39 +1010,126 @@
       </div>
 
             <!-- Network Provider Section -->
-      <div class="pt-8 pb-6 border-b border-outline-variant/30">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="material-symbols-outlined text-[18px] text-secondary">hub</span>
-          <h4 class="font-headline text-xs font-bold uppercase tracking-wider text-primary-container">Network Provider</h4>
+      <div class="pt-8 pb-8 border-b border-outline-variant/30">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container">
+              <span class="material-symbols-outlined text-[18px]">hub</span>
+            </div>
+            <h4 class="font-headline text-xs font-bold uppercase tracking-wider text-primary-container">Jaringan Provider Resmi</h4>
+          </div>
+          <span class="text-[11px] text-on-surface-variant/80 font-medium">Outbound Jatim Official Network</span>
         </div>
-        <div class="flex flex-wrap gap-1.5 sm:gap-2">
-          <a href="https://outbound.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">outbound.web.id</a>
-          <a href="https://outboundbatumalang.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">outboundbatumalang.web.id</a>
-          <a href="https://provideroutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">provideroutboundmalang.web.id</a>
-          <a href="https://outboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">outboundmalang.web.id</a>
-          <a href="https://paketoutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">paketoutboundmalang.web.id</a>
-          <a href="https://vendoroutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">vendoroutboundmalang.web.id</a>
-          <a href="https://offroad.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">offroad.web.id</a>
-          <a href="https://paintball.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">paintball.web.id</a>
-          <a href="https://cobantalun.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">cobantalun.web.id</a>
-          <a href="https://rafting.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">rafting.web.id</a>
-          <a href="https://familygathering.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">familygathering.web.id</a>
-          <a href="https://outboundpantai.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">outboundpantai.web.id</a>
-          <a href="https://paintballbatumalang.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">paintballbatumalang.web.id</a>
-          <a href="https://vendorhampers.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">vendorhampers.web.id</a>
-          <a href="https://vendorpaintball.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">vendorpaintball.web.id</a>
-          <a href="https://paketoutbound.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">paketoutbound.web.id</a>
-          <a href="https://cobanrondo.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">cobanrondo.web.id</a>
-          <a href="https://malangtraveler.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">malangtraveler.web.id</a>
-          <a href="https://outboundkediri.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">outboundkediri.web.id</a>
-          <a href="https://pantaimalangselatan.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">pantaimalangselatan.web.id</a>
-          <a href="https://jasaoutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">jasaoutboundmalang.web.id</a>
-          <a href="https://vendoroffroad.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">vendoroffroad.web.id</a>
-          <a href="https://vendorgathering.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">vendorgathering.web.id</a>
-          <a href="https://outboundindonesia.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">outboundindonesia.web.id</a>
-          <a href="https://indonesiaoutbound.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">indonesiaoutbound.web.id</a>
-          <a href="https://gemilangkatunoutbound.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">gemilangkatunoutbound.web.id</a>
-          <a href="https://outboundjatim.web.id" target="_blank" rel="noopener noreferrer" class="text-[11px] font-medium text-on-surface-variant bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 px-2.5 py-1 rounded-md transition-all duration-200">outboundjatim.web.id</a>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+          <a href="https://outbound.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">outbound.web.id</span>
+          </a>
+          <a href="https://outboundbatumalang.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">outboundbatumalang.web.id</span>
+          </a>
+          <a href="https://provideroutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">provideroutboundmalang.web.id</span>
+          </a>
+          <a href="https://outboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">outboundmalang.web.id</span>
+          </a>
+          <a href="https://paketoutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">paketoutboundmalang.web.id</span>
+          </a>
+          <a href="https://vendoroutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">vendoroutboundmalang.web.id</span>
+          </a>
+          <a href="https://offroad.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">offroad.web.id</span>
+          </a>
+          <a href="https://paintball.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">paintball.web.id</span>
+          </a>
+          <a href="https://cobantalun.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">cobantalun.web.id</span>
+          </a>
+          <a href="https://rafting.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">rafting.web.id</span>
+          </a>
+          <a href="https://familygathering.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">familygathering.web.id</span>
+          </a>
+          <a href="https://outboundpantai.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">outboundpantai.web.id</span>
+          </a>
+          <a href="https://paintballbatumalang.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">paintballbatumalang.web.id</span>
+          </a>
+          <a href="https://vendorhampers.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">vendorhampers.web.id</span>
+          </a>
+          <a href="https://vendorpaintball.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">vendorpaintball.web.id</span>
+          </a>
+          <a href="https://paketoutbound.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">paketoutbound.web.id</span>
+          </a>
+          <a href="https://cobanrondo.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">cobanrondo.web.id</span>
+          </a>
+          <a href="https://malangtraveler.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">malangtraveler.web.id</span>
+          </a>
+          <a href="https://outboundkediri.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">outboundkediri.web.id</span>
+          </a>
+          <a href="https://pantaimalangselatan.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">pantaimalangselatan.web.id</span>
+          </a>
+          <a href="https://jasaoutboundmalang.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">jasaoutboundmalang.web.id</span>
+          </a>
+          <a href="https://vendoroffroad.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">vendoroffroad.web.id</span>
+          </a>
+          <a href="https://vendorgathering.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">vendorgathering.web.id</span>
+          </a>
+          <a href="https://outboundindonesia.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">outboundindonesia.web.id</span>
+          </a>
+          <a href="https://indonesiaoutbound.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">indonesiaoutbound.web.id</span>
+          </a>
+          <a href="https://gemilangkatunoutbound.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">gemilangkatunoutbound.web.id</span>
+          </a>
+          <a href="https://outboundjatim.web.id" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-white border border-outline-variant/30 text-[11px] font-medium text-on-surface-variant transition-all duration-200 hover:shadow-sm">
+            <span class="material-symbols-outlined text-[12px] opacity-60 group-hover:opacity-100">language</span>
+            <span class="truncate">outboundjatim.web.id</span>
+          </a>
         </div>
       </div>
 
